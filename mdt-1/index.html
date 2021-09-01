@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Assignment 1.1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {
+      font-family: roboto, sans-serif;
+    }
+
+    button,
+    input {
+      padding: 3px;
+      margin: 5px;
+    }
+
+    input {
+      width: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Assignment 1.1</h1>
+    <nav>
+      <ul>
+        <li href="#"><a href="github">Source on github</a></li>
+        <li href="#">MDT-2</li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <article>
+      <h2>My article</h2>
+
+      <p>
+        This is a fake content, it's just where I decided to put my button.
+      </p>
+      <button onClick="count()"> Click me to increment ! </button><input type="text" id="counter" disabled value="0">
+
+    </article>
+
+  </main>
+  <footer>
+  </footer>
+
+  <script>
+    let increment = 0
+    const countDisplay = document.getElementById('counter')
+    function count() {
+      increment++
+      countDisplay.value = increment
+      console.log('Incremented !')
+    }
+  </script>
+
+  <body>
+
+</html>
