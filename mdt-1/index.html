@@ -3,7 +3,7 @@
 <html>
 
 <head>
-  <title>Assignment 1.1</title>
+  <title>MDT-1</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
@@ -21,16 +21,22 @@
       width: 50px;
       text-align: center;
     }
+
+    footer {
+      margin-top: 300px;
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>Assignment 1.1</h1>
+    <h1>Assignment 1.1 & 1.2</h1>
     <nav>
       <ul>
-        <li href="#"><a href="github">Source on github</a></li>
+        <li href="#"><a href="https://github.com/Faber-smythe/mdt-course/tree/master/mdt-1" target="_blank">Source on
+            github</a></li>
+        <li href="#"><a href="article.html">Article</a></li>
         <li href="#">MDT-2</li>
       </ul>
     </nav>
@@ -39,25 +45,34 @@
   <main>
 
     <article>
-      <h2>My article</h2>
+      <h2>My first content</h2>
 
       <p>
         This is a fake content, it's just where I decided to put my button.
       </p>
-      <button onClick="count()"> Click me to increment ! </button><input type="text" id="counter" disabled value="0">
 
+      <button onClick="count()"> Click me to increment ! </button><input type="text" id="counter" disabled value="0">
     </article>
 
   </main>
+
   <footer>
+    <h3>No really need for a footer, but here is one.</h3>
+    <h3>Made by <a href="https://github.com/Faber-smythe" target="_blank">Faber Smythe</a></h3>
   </footer>
 
   <script>
+    // initialize counter
     let increment = 0
+    // find the HTML input element in which we want to display the counter
     const countDisplay = document.getElementById('counter')
+    // create the function called when clicking on the button
     function count() {
+      // add 1 to the count
       increment++
+      // set the value of the input element
       countDisplay.value = increment
+      // log the event in the console
       console.log('Incremented !')
     }
   </script>

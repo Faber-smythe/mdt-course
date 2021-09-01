@@ -1,0 +1,92 @@
+html {
+  font-family: roboto, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-image: url('https://capovelo.com/wp-content/uploads/2017/08/marcgasch_scotland17170720__dsc5616-e1503430940617.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  margin: 0px;
+  color: #272727;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 4rem;
+  margin: 5px 0px;
+}
+
+header{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 100%;
+  padding: 10px;
+}
+
+main {
+  background: rgba(255, 255, 255, 0.8);
+  width: 90vw;
+  padding: 20px;
+  margin: 20px;
+}
+
+h2{
+  font-size: 3rem;
+}
+
+main p{
+  text-indent: 2rem;
+}
+
+
+/**
+* CLASSES
+*/
+
+.category{
+  border-radius: 3px;
+  color: white;
+  text-transform: uppercase;
+  background: orange;
+  padding: 5px;
+}
+.abstract{
+  font-size: 1.35rem;
+}
+.authorInfo{
+  display: flex;
+  align-items: center;
+  border-top: 1px solid black;
+  margin:10px;
+  padding:10px;
+}
+.authorInfo img{
+  border-radius: 150px;
+  height: 70px;
+  margin: 5px;
+} 
+.mainImage{
+  max-width: 100%;
+}
+.mainImageCopyright{
+  margin: 0px;
+  text-align: right;
+  opacity: 0.6;
+}
+.articleContent{
+margin-top: 15px;
+}
+
